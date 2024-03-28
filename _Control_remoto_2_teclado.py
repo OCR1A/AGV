@@ -2,7 +2,6 @@
 from _py_librerias  import Bluetooth as Bt #Bluetooth
 from _py_librerias  import Camera as cam #Camara
 import cv2 #Opencv2
-from time import sleep
 
 def normalize(wpn, wm):
     if(wpn>wm):
@@ -12,7 +11,7 @@ def normalize(wpn, wm):
     return wpn
 
 #INICIALIZACION ROBOT Y CAMARA 
-macAddress = "C0:49:EF:9C:7A:E6"
+macAddress = "E8:6B:EA:CA:74:CA"  
 robot0=Bt.connect(macAddress)
 
 robot_bt1=robot0 #Seleccion del robot a utilizar en el programa
